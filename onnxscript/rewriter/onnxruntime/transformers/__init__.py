@@ -18,4 +18,12 @@ TRANSFORMERS_FUNCTION_REWRITE_RULES: list[type[function_rule.FunctionRewriteRule
     layernorm.LNRewriteRule,
     fastgelu.GeluRewriteRule,
     biassplitgelu.GegluRewriteRule,
+    multihead_attention.MHALlama2RewriteRule,
+    multihead_attention.GQALlama3RewriteRule,
+    multihead_attention.AttentionRewriteRule,
+    multihead_attention.MLP3RewriteRule,
+    multihead_attention.GQALlama3RewriteRuleFirstAttention,
+    multihead_attention.MLPRewriteRule,
+    multihead_attention.GQALlamaRewriteRule,
+
 ]
