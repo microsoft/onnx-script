@@ -4285,7 +4285,7 @@ def aten_index_put(
         indices = list(indices) + [None] * (self_rank - len(indices))
 
     # Get values shape (we use .numpy to make it hashable)
-    values_shape = values.shape.numpy()
+    values_shape = values.shape
 
     index_vectors = []
     for i in range(self_rank):
